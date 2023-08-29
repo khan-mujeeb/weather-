@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Document</title>
+    </head>
+    <body >
+        <!-- wrapper -->
+        <div class="w-screen h-screen bg-gradient-to-r from-[rgba(137,171,245,0.37)] via-transparent to-[#f5f7fc] mx-auto flex px-40  items-center justify-center">
+
+
+            <!-- conatiner -->
+            <div style="border-radius: 50px;" class="flex rounded-3xl  shadow-2xl">
+
+
+                <!-- left conatiner  -->
+                <div
+                    class="w-[600px] flex flex-col gap-3 items-center bg-dustyRose p-8 shadow-xl "
+                >
+
+                    <h1 class="text-4xl font-mullish font-bold" id="cityName">
+                        Mumbai, IN
+                    </h1>
+
+                    <h2 id="weatherName" class="text-2xl font-mullish opacity-75">haze</h2>
+
+                    <img
+                        class="w-[280px] h-[300px] hover:scale-105 transition duration-700"
+                        src="./src/img/09d.svg"
+                        id="weather-logo"
+                    />
+
+                    <h3
+                        class="text-6xl font-mullish font-bold"
+                        id="tempreature"
+                    >
+                        20 <sup>o</sup>C
+                    </h3>
+
+                    <p class="font-mullish opacity-75">Feels like 20 <sup>o</sup>C</p>
+                </div>
+
+                <!-- right container  -->
+                <div class="bg-[url('src/img/overcast.jpg')] w-full  p-8 bg-contain">
+                    
+                    <!-- grid  -->
+                    <div class=" grid grid-cols-3 grid-rows-3 gap-4">
+
+
+                        <div class="">
+                            <h2 class="font-mullish font-semibold text-2xl" id="date-time ">
+                                Friday. 11:00
+                            </h2>
+                        </div>
+
+                        <div></div>
+
+                        <div >
+                            <input class="w-full rounded-md h-10 text-end px-4 font-mullish shadow-xl" type="text" placeholder="Search City" />
+
+                        </div>
+
+                        <!-- card 1 -->
+                        <div class="relative rounded-xl flex items-center h-40 shadow-xl  bg-offwhite hover:scale-105  transition duration-600" id="">
+                            <img src="./src/img/humidity.png " class="w-24" />
+
+                            <div class="flex flex-col justify-end absolute top-4 right-8">
+                                <h3 class="text-end font-mullish text-xl opacity-80">Humadity</h3>
+                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <p class="text-end text-xl opacity-80">%</p>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- card 2 -->
+                        <div class="relative rounded-xl flex  items-center shadow-xl px-8 h-40 bg-offwhite hover:scale-105 transition duration-600" id="">
+                            <img src="./src/img/wind.png" class="w-24" />
+
+                            <div class="flex flex-col justify-end absolute top-4 right-8">
+                                <h3 class="text-end font-mullish text-xl opacity-80">Wind speed</h3>
+                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <p class="text-end text-xl opacity-80">m/s</p>
+                            </div>
+                        </div>
+
+
+                        <!-- card 3 -->
+                        <div class="relative  px-8 rounded-xl flex items-center shadow-xl h-40 bg-offwhite hover:scale-105 transition duration-600" id="">
+                            <img src="./src/img/compass.png" class="w-20" />
+
+                            <div class="flex flex-col justify-end absolute top-4 right-8">
+                                <h3 class="text-end font-mullish text-xl opacity-80">Wind direction</h3>
+                                <h4 class="text-end text-3xl font-semibold">S</h4>
+                                
+                            </div>
+                        </div>
+
+
+                        <!-- card 1 -->
+                        <div class="relative px-8  rounded-xl flex items-center shadow-xl h-40 bg-offwhite hover:scale-105 transition duration-600" id="">
+                            <img src="./src/img/binocular.png" class="w-24" />
+
+                            <div class="flex flex-col justify-end absolute top-4 right-8">
+                                <h3 class="text-end font-mullish text-xl opacity-80">Visibility</h3>
+                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <p class="text-end text-xl opacity-80">km</p>
+                            </div>
+                        </div>
+
+
+                        <!-- card 1 -->
+                        <div class="relative px-8  rounded-xl flex items-center shadow-xl h-40 bg-offwhite hover:scale-105 transition duration-600" id="">
+                            <img src="./src/img/sunrise.png" class="w-24" />
+
+                            <div class="flex flex-col justify-end absolute top-4 right-8">
+                                <h3 class="text-end font-mullish text-xl opacity-80">Sunrise</h3>
+                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                
+                            </div>
+                        </div>
+
+
+                        <!-- card 1 -->
+                        <div class="relative  px-8 rounded-xl flex items-center shadow-xl h-40 bg-offwhite hover:scale-105 transition duration-600" id="">
+                            <img src="./src/img/sunset.png" class="w-24" />
+
+                            <div class="flex flex-col justify-end absolute top-4 right-8">
+                                <h3 class="text-end font-mullish text-xl opacity-80">Sunset</h3>
+                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                
+                            </div>
+                        </div>
+
+
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
