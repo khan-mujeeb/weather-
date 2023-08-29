@@ -12,16 +12,16 @@
 
 
             <!-- conatiner -->
-            <div style="border-radius: 50px;" class="flex rounded-3xl  shadow-2xl">
+            <div class="flex shadow-2xl rounded-3xl">
 
 
                 <!-- left conatiner  -->
                 <div
                     class="w-[600px] flex flex-col gap-3 items-center bg-dustyRose p-8 shadow-xl "
-                >
+                style="border-radius: 24px 0 0 24px;" >
 
                     <h1 class="text-4xl font-mullish font-bold" id="cityName">
-                        Mumbai, IN
+                       
                     </h1>
 
                     <h2 id="weatherName" class="text-2xl font-mullish opacity-75">haze</h2>
@@ -34,31 +34,31 @@
 
                     <h3
                         class="text-6xl font-mullish font-bold"
-                        id="tempreature"
+                        id="temperature"
                     >
                         20 <sup>o</sup>C
                     </h3>
 
-                    <p class="font-mullish opacity-75">Feels like 20 <sup>o</sup>C</p>
+                    <p id="feels-like" class="font-mullish opacity-75">Feels like 20 <sup>o</sup>C</p>
                 </div>
 
                 <!-- right container  -->
-                <div class="bg-[url('src/img/overcast.jpg')] w-full  p-8 bg-contain">
+                <div class="bg-[url('src/img/overcast.jpg')] w-full  p-8 bg-contain" style="border-radius: 0 24px 24px 0;">
                     
                     <!-- grid  -->
                     <div class=" grid grid-cols-3 grid-rows-3 gap-4">
 
 
                         <div class="">
-                            <h2 class="font-mullish font-semibold text-2xl" id="date-time ">
-                                Friday. 11:00
+                            <h2 id="date-time" class="font-mullish font-semibold text-2xl"  >
+                                Friday, 11:00
                             </h2>
                         </div>
 
                         <div></div>
 
                         <div >
-                            <input class="w-full rounded-md h-10 text-end px-4 font-mullish shadow-xl" type="text" placeholder="Search City" />
+                            <input id="city-input" class="w-full rounded-md h-10 text-end px-4 font-mullish shadow-xl" type="text" placeholder="Search City" />
 
                         </div>
 
@@ -68,7 +68,7 @@
 
                             <div class="flex flex-col justify-end absolute top-4 right-8">
                                 <h3 class="text-end font-mullish text-xl opacity-80">Humadity</h3>
-                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <h4 id="humidity" class="text-end text-3xl font-semibold">77</h4>
                                 <p class="text-end text-xl opacity-80">%</p>
                             </div>
                         </div>
@@ -80,8 +80,8 @@
                             <img src="./src/img/wind.png" class="w-24" />
 
                             <div class="flex flex-col justify-end absolute top-4 right-8">
-                                <h3 class="text-end font-mullish text-xl opacity-80">Wind speed</h3>
-                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <h3   class="text-end font-mullish text-xl opacity-80">Wind speed</h3>
+                                <h4 id="wind-speed" class="text-end text-3xl font-semibold">77</h4>
                                 <p class="text-end text-xl opacity-80">m/s</p>
                             </div>
                         </div>
@@ -92,8 +92,8 @@
                             <img src="./src/img/compass.png" class="w-20" />
 
                             <div class="flex flex-col justify-end absolute top-4 right-8">
-                                <h3 class="text-end font-mullish text-xl opacity-80">Wind direction</h3>
-                                <h4 class="text-end text-3xl font-semibold">S</h4>
+                                <h3  class="text-end font-mullish text-xl opacity-80">Wind direction</h3>
+                                <h4 id="wind-direction" class="text-end text-3xl font-semibold">S</h4>
                                 
                             </div>
                         </div>
@@ -104,8 +104,8 @@
                             <img src="./src/img/binocular.png" class="w-24" />
 
                             <div class="flex flex-col justify-end absolute top-4 right-8">
-                                <h3 class="text-end font-mullish text-xl opacity-80">Visibility</h3>
-                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <h3  class="text-end font-mullish text-xl opacity-80">Visibility</h3>
+                                <h4 id="visibility" class="text-end text-3xl font-semibold">77</h4>
                                 <p class="text-end text-xl opacity-80">km</p>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
 
                             <div class="flex flex-col justify-end absolute top-4 right-8">
                                 <h3 class="text-end font-mullish text-xl opacity-80">Sunrise</h3>
-                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <h4 id="sunrise" class="text-end text-3xl font-semibold">77</h4>
                                 
                             </div>
                         </div>
@@ -129,7 +129,7 @@
 
                             <div class="flex flex-col justify-end absolute top-4 right-8">
                                 <h3 class="text-end font-mullish text-xl opacity-80">Sunset</h3>
-                                <h4 class="text-end text-3xl font-semibold">77</h4>
+                                <h4 id="sunset" class="text-end text-3xl font-semibold">77</h4>
                                 
                             </div>
                         </div>
@@ -140,5 +140,9 @@
                 </div>
             </div>
         </div>
+
+        <script src="script.js"></script>
+
+
     </body>
 </html>
